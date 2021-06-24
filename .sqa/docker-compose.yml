@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  node:
+    image: node:12
+    container_name: node
+    hostname: "doc-sqaaas"
+    volumes:
+     - type: bind
+       source: ./
+       target: /doc-sqaaas
+    command: sleep infinity
