@@ -1,18 +1,18 @@
 # Docker's build context
-The build context is where Docker expects the Dockerfile and the series of
+The *build context* is where Docker expects the `Dockerfile` and the series of
 files required to complete the build process. The location (path) of the context
-is always required, and it is the default location of the Dockerfile. However,
-as one could expect, Docker provides a CLI argument to define an alternative
-location for the Dockerfile.
+is always required, and it is the default location of the `Dockerfile`. However,
+as one could expect, through Docker CLI one can define an alternative location
+for the `Dockerfile`.
 
-As recommended in [Dockerfile's best practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#understand-build-context),
-the context folder shall be maintained as lightweight as possible since all
-the directory content is passed (recursively) to Docker daemon, and this fact
-might imply a great deal of memory.
+As recommended in [Dockerfile's best practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#understand-build-context)
+document, the context folder shall be maintained as lightweight as possible
+since all the directory content is passed (recursively) to Docker daemon, and
+this fact might imply a great deal of memory.
 
 # How SQAaaS deals with the build context?
 By default, SQAaaS points the build context to the same path location where the
-Dockerfile is found (this one is provided by the user). Thus, for instance,
+`Dockerfile` is found (this one is provided by the user). Thus, for instance,
 when trying to build a Docker image that exists under `docker/Dockerfile`
 (within a code repository), the context is set to `./docker`. This is by far
 the most extended approach, where all the additional files required to build the
