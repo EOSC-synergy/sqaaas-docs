@@ -2,7 +2,8 @@
 Services make up the building and testing environments as part of the pipeline
 execution. Consequently, the avaliable set of services shall fulfill all the
 testing requirements of the piece of software being analyzed, including tools
-(e.g. linters) and/or additional services (e.g. databases, APIs, etc.).
+(e.g. linters, test runners) and/or additional services (e.g. databases, APIs,
+etc.).
 
 ## Is it all about containers?
 Although there is no technical constraint to use any other technology, such as
