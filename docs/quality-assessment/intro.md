@@ -13,3 +13,7 @@ For tackling the validation, the SQAaaS API relies on the metadata defined in
 the tooling repository. To this end, it seeks for the `reporting` property
 within the definition of the tool whose output is being parsed. Consequently,
 **if the `reporting` property has not been set, the API skips the validation**.
+
+# Configuration requirements
+As mentioned before, the QAA module relies on the information 1) tooling
+metadata, and 2) matchmaking process
