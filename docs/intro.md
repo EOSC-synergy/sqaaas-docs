@@ -46,6 +46,10 @@ own purpose and audience:
     researchers (individuals, communities) to policy makers or funding
     organisations.
 
+<p align="center">
+  <img src="/static/img/sqaaas.png"/>
+</p>
+
 <!--
 ## Multiple interfaces
 The SQAaaS plaform offers several interfaces, which are suitable for diverse
