@@ -10,6 +10,24 @@ Hence, CI/CD pipelines are associated with code repositories, since it is the
 code or documentation (docs-as-code) the main target of the quality checks
 that are defined in them.
 
+## What can the Pipeline as a Service do for you?
+### Pipeline composition & sharing
+The main feature and objective of the Pipeline as a Service module is to
+compose on-demand and ready-to-use CI/CD pipelines based on the feedback of
+the user. Thus, the web interface provides a means to distribute the resultant
+pipeline so it can be successfully added to the target code repository:
+1. Download the pipeline as a ZIP file, so that the developer needs to
+   manually extract & push to the desired repository.
+2. Create a [GitHub's pull requests](https://docs.github.com/en/pull-requests).
+   This option will automatically create a pull request to a given target
+   repository. By simply merging the pull request, the pipeline will be added
+   to your code repository.
+### Pipeline execution & refactoring
+Being able to test the brand-new pipeline is a helpful feature to secure its
+operation once is added to the code repository. Any failure or unintended
+behaviour can be worked out by refactoring the stages that the pipeline was
+broken down into.
+
 ## Features of CI/CD pipelines composed by SQAaaS
 1. CI/CD pipelines can be placed either in the same repository as the code or
    documentation, or in a separate repository. The first option is the
