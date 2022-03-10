@@ -64,6 +64,9 @@ section.
    repository events (e.g. push & pull operations) and be triggered
    automatically without the need of additional customization.
 2. CI/CD pipelines are technology-specific[^1]:
+   - [Git](https://git-scm.com/) is the de-facto tool for source code or
+     documentation version control, and thus, the solution being adopted by
+     SQAaaS. This means that *only git-based code repositories are supported*.
    - [Jenkins Pipeline as Code](https://www.jenkins.io/doc/book/pipeline/) are
      the underlying technology of the CI/CD pipelines composed through the
      current SQAaaS module. This means that *a Jenkins CI service is always
