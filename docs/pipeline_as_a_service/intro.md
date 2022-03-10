@@ -64,9 +64,10 @@ section.
      the underlying technology of the CI/CD pipelines composed through the
      current SQAaaS module. This means that *a Jenkins CI service is always
      required for the CI/CD pipelines to be executed*.
-   - [Git](https://git-scm.com/) is the de-facto tool for source code or
-     documentation version control, and thus, the solution being adopted by
-     SQAaaS.
+   - [Docker Compose](https://docs.docker.com/compose/) is the container
+     orchestration engine used to deploy the services that take part in the
+     CI/CD work. This means that the Jenkins CI service shall be configured to
+     support Docker Compose agents.
 
 [^1]: For certain features, such as pipeline execution and sharing (via
       pull requests), the current version of the Pipeline as a Service
