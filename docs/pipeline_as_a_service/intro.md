@@ -1,0 +1,33 @@
+---
+title: The Pipeline as a Service module
+---
+
+The **Pipeline as a Service** module offers developers with a graphical means
+to compose workflows, aka CI/CD pipelines, that carry out the software
+verification and validation (V&V) processes in an automated fashion.
+
+Hence, CI/CD pipelines are associated with code repositories, since it is the
+code or documentation (docs-as-code) the main target of the quality checks
+that are defined in them.
+
+## Features of CI/CD pipelines composed by SQAaaS
+1. CI/CD pipelines can be placed either in the same repository as the code or
+   documentation, or in a separate repository. The first option is the
+   *recommended approach* since the pipeline will react promptly to the
+   repository events (e.g. push & pull operations) and be triggered
+   automatically without the need of additional customization.
+2. CI/CD pipelines are technology-specific[^1]:
+   - [Jenkins code pipelines](https://www.jenkins.io/doc/book/pipeline/) are
+     the underlying technology of the CI/CD pipelines composed through the
+     current SQAaaS module. This means that *a Jenkins CI service is always
+     required for the CI/CD pipelines to be executed*.
+   - [Git](https://git-scm.com/) is the de-facto tool for source code or
+     documentation version control, and thus, the solution being adopted by
+     SQAaaS.
+   [^1]: For certain features, such as pipeline execution and sharing (via
+         pull requests), the current version of the Pipeline as a Service
+         module only supports [GitHub](https://github.com) plaform through the
+         [GitHub API](https://docs.github.com/rest). This is not an issue from
+         the end user's perspective, as the resultant CI/CD pipelines can be
+         used in any Git environment or social coding platform other than
+         GitHub, such as [Gitlab](https://about.gitlab.com/).
