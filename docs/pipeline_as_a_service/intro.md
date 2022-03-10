@@ -1,5 +1,5 @@
 ---
-title: The Pipeline as a Service module
+title: Introduction
 ---
 
 The **Pipeline as a Service** module offers developers with a graphical means
