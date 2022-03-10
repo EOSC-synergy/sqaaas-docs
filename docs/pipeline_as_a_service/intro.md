@@ -9,23 +9,23 @@ the CI/CD pipelines are associated with code repositories, since it is the
 code or documentation (docs-as-code) the main target of the quality checks
 that are defined in them.
 
-## Bringing over good practices to research environments
+## Bringing over good practices to research
 Through the web-based composition of the CI/CD pipelines, the SQAaaS aims at
-bringing over their proven benefits to researchers developing their own
+bringing over their proven benefits to researchers that develop their own
 software solutions, without the need to permeate down into the nitty-gritty of
 current technology offerings, such as
-[Jenkins]((https://www.jenkins.io/doc/book/pipeline/),
+[Jenkins](https://www.jenkins.io/doc/book/pipeline/),
 [GitHub Actions](https://docs.github.com/actions) or
-[Travis CI](https://travis-ci.org/) (just to mention a few), which can a
+[Travis CI](https://travis-ci.org/) (just to mention a few), which can be a
 daunting task oftentimes.
 
 With this approach, individuals and communities within the research ecosystem
-will be more aware of the positive impact that relying on CI/CD pipelines for
-tackling the software development life cycle brings in the short and long
-term.
+will be more aware of the positive impact that relying on CI/CD pipelines
+brings in the short and long term when it comes to manage the software
+development life cycle.
 
 ## What can the Pipeline as a Service do for you?
-### Pipeline composition & sharing
+### 1. Pipeline composition & sharing
 The main feature and objective of the Pipeline as a Service module is to
 compose on-demand and ready-to-use CI/CD pipelines based on the feedback of
 the user. Thus, the web interface provides a means to distribute the resultant
@@ -36,7 +36,7 @@ pipeline so it can be successfully added to the target code repository:
    This option will automatically create a pull request to a given target
    repository. By simply merging the pull request, the pipeline will be added
    to your code repository.
-### Pipeline execution & refactoring
+### 2. Pipeline execution & refactoring
 Being able to test the brand-new pipeline is a helpful feature to secure its
 operation once is added to the code repository. Any failure or unintended
 behaviour can be worked out by refactoring the stages that the pipeline was
@@ -56,10 +56,11 @@ broken down into.
    - [Git](https://git-scm.com/) is the de-facto tool for source code or
      documentation version control, and thus, the solution being adopted by
      SQAaaS.
-   [^1]: For certain features, such as pipeline execution and sharing (via
-         pull requests), the current version of the Pipeline as a Service
-         module only supports [GitHub](https://github.com) plaform through the
-         [GitHub API](https://docs.github.com/rest). This is not an issue from
-         the end user's perspective, as the resultant CI/CD pipelines can be
-         used in any Git environment or social coding platform other than
-         GitHub, such as [Gitlab](https://about.gitlab.com/).
+
+[^1]: For certain features, such as pipeline execution and sharing (via
+      pull requests), the current version of the Pipeline as a Service
+      module only supports [GitHub](https://github.com) plaform through the
+      [GitHub API](https://docs.github.com/rest). This is not an issue from
+      the end user's perspective, as the resultant CI/CD pipelines can be
+      used in any Git environment or social coding platform other than
+      GitHub, such as [Gitlab](https://about.gitlab.com/).
