@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdoc=self.webpackChunkdoc||[]).push([[320],{5079:function(a){a.exports=JSON.parse('{"allTagsPath":"/sqaaas-docs/blog/tags","slug":"hola","name":"hola","count":1,"permalink":"/sqaaas-docs/blog/tags/hola"}')}}]);

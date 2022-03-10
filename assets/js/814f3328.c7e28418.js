@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdoc=self.webpackChunkdoc||[]).push([[535],{5641:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome","permalink":"/sqaaas-docs/blog/welcome"},{"title":"Hello","permalink":"/sqaaas-docs/blog/hello-world"},{"title":"Hola","permalink":"/sqaaas-docs/blog/hola"}]}')}}]);
