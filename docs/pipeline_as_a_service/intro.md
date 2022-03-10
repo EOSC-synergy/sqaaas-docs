@@ -43,6 +43,10 @@ behaviour can be worked out by refactoring the stages that the pipeline was
 broken down into.
 
 ## The process of making up a CI/CD pipeline
+<p align="center">
+  <img src="/static/img/pipeline_step_1.png"/>
+</p>
+
 The Pipeline as a Service guides you through a series of steps where settings
 for the key input data can be filled up, in particular:
 1. The code repositories
