@@ -48,16 +48,35 @@ broken down into.
 </p>
 
 The Pipeline as a Service guides you through a series of steps where settings
-for the key input data can be filled up, in particular:
-1. The code repositories
-2. The services
-3. The quality criteria
+for the main actors in a CI/CD pipeline can be filled up, in particular:
+
+1. The **repositories**, where the code and/or documentation lies.
+2. The **services** that will take part in the software V&V.
+3. The **criteria**, which groups the checks into specific software
+   quality-related criteria. Each criterion can have multiple checks, and one
+   check represents a different stage in the pipeline.
+
+   :::note
+
+   There are contraints in regards to the supported technologies and standards for
+   the pipeline actors above (check out the
+   [pipeline characteristics section](#characteristics-of-the-pipelines)
+   for additional details):
+
+   - Only Git repositories are supported.
+   - Only container-based services (such as [Docker](https://www.docker.com/))
+     can be defined.
+   - The selectable criteria belongs to the [A set of Common Software Quality
+     Assurance Baseline Criteria for Research
+     Projects](https://github.com/indigo-dc/sqa-baseline) standard.
+
 
 The last step (step 4) provides a summary of the resultant pipeline and access
 to the *testing-refactoring-sharing* features described in the previous
 section.
 
-## Characteristics of the CI/CD pipelines
+
+## Characteristics of the pipelines
 1. CI/CD pipelines can be placed either in the same repository as the code or
    documentation, or in a separate repository. The first option is the
    *recommended approach* since the pipeline will react promptly to the
