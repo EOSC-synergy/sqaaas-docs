@@ -36,13 +36,24 @@ pipeline so it can be successfully added to the target code repository:
    This option will automatically create a pull request to a given target
    repository. By simply merging the pull request, the pipeline will be added
    to your code repository.
-### 2. Pipeline execution & refactoring
+### 2. Pipeline testing & refactoring
 Being able to test the brand-new pipeline is a helpful feature to secure its
 operation once is added to the code repository. Any failure or unintended
 behaviour can be worked out by refactoring the stages that the pipeline was
 broken down into.
 
-## Features of CI/CD pipelines composed by SQAaaS
+## The process of making up a CI/CD pipeline
+The Pipeline as a Service guides you through a series of steps where settings
+for the key input data can be filled up, in particular:
+1. The code repositories
+2. The services
+3. The quality criteria
+
+The last step (step 4) provides a summary of the resultant pipeline and access
+to the *testing-refactoring-sharing* features described in the previous
+section.
+
+## Characteristics of the CI/CD pipelines
 1. CI/CD pipelines can be placed either in the same repository as the code or
    documentation, or in a separate repository. The first option is the
    *recommended approach* since the pipeline will react promptly to the
