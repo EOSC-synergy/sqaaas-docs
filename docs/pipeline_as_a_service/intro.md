@@ -4,9 +4,8 @@ title: The Pipeline as a Service module
 
 The **Pipeline as a Service** module offers developers with a graphical means
 to compose workflows, aka CI/CD pipelines, that carry out the software
-verification and validation (V&V) processes in an automated fashion.
-
-Hence, CI/CD pipelines are associated with code repositories, since it is the
+verification and validation (V&V) processes in an automated fashion. Hence,
+the CI/CD pipelines are associated with code repositories, since it is the
 code or documentation (docs-as-code) the main target of the quality checks
 that are defined in them.
 
