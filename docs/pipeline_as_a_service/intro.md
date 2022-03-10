@@ -10,6 +10,21 @@ Hence, CI/CD pipelines are associated with code repositories, since it is the
 code or documentation (docs-as-code) the main target of the quality checks
 that are defined in them.
 
+## Bringing over good practices to research environments
+Through the web-based composition of the CI/CD pipelines, the SQAaaS aims at
+bringing over their proven benefits to researchers developing their own
+software solutions, without the need to permeate down into the nitty-gritty of
+current technology offerings, such as
+[Jenkins]((https://www.jenkins.io/doc/book/pipeline/),
+[GitHub Actions](https://docs.github.com/actions) or
+[Travis CI](https://travis-ci.org/) (just to mention a few), which can a
+daunting task oftentimes.
+
+With this approach, individuals and communities within the research ecosystem
+will be more aware of the positive impact that relying on CI/CD pipelines for
+tackling the software development life cycle brings in the short and long
+term.
+
 ## What can the Pipeline as a Service do for you?
 ### Pipeline composition & sharing
 The main feature and objective of the Pipeline as a Service module is to
@@ -35,7 +50,7 @@ broken down into.
    repository events (e.g. push & pull operations) and be triggered
    automatically without the need of additional customization.
 2. CI/CD pipelines are technology-specific[^1]:
-   - [Jenkins code pipelines](https://www.jenkins.io/doc/book/pipeline/) are
+   - [Jenkins Pipeline as Code](https://www.jenkins.io/doc/book/pipeline/) are
      the underlying technology of the CI/CD pipelines composed through the
      current SQAaaS module. This means that *a Jenkins CI service is always
      required for the CI/CD pipelines to be executed*.
