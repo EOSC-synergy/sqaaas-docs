@@ -1,8 +1,6 @@
-The Quality Assessment & Awarding (QAA) module analyzes the level of compliance
-of a given code repository with the defined standards for software.
-Additionally, if the means of deployment is provided, the QAA module will also
-check the alignment with the baseline criteria defined under the service
-standards.
+The Quality Assessment & Awarding (QAA) module analyzes the level of
+compliance of a given code repository with a set of
+[standards for software](https://github.com/indigo-dc/sqa-baseline).
 
 # Under the hood
 
