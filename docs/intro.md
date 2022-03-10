@@ -26,11 +26,11 @@ the DevOps culture, and in particular, through the concept of CI/CD pipelines.
 ## Fostering quality in research software
 The SQAaaS portal offers access to two different features, each one with its
 own purpose and audience:
-- The **Pipeline as a Service** module provides the end user with a graphical
-  means to compose the CI/CD pipelines that will verify and validate (V&V) her
-  software. To facilitate the task, each stage in the pipeline executes a unit
-  of work that is contextualized in a specific SQA criterion. The SQAaaS
-  supports SQA criteria both for
+- The [**Pipeline as a Service**](pipeline_as_a_service/intro) module provides
+  the end user with a graphical means to compose the CI/CD pipelines that will
+  verify and validate (V&V) her software. To facilitate the task, each stage in
+  the pipeline executes a unit of work that is contextualized in a specific SQA
+  criterion. The SQAaaS supports SQA criteria both for
   [software](https://indigo-dc.github.io/sqa-baseline/) and
   [services](https://eosc-synergy.github.io/service-qa-baseline/) standards.
   - Common audience: computational scientists, research software engineers
