@@ -6,7 +6,7 @@ module.exports = {
   title: 'SQAaaS documentation site',
   tagline: 'Building quality research software',
   url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/sqaaas-docs/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
