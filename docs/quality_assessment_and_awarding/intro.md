@@ -1,3 +1,7 @@
+---
+title: Introduction
+---
+
 The Quality Assessment & Awarding (QAA) module analyzes the level of
 compliance of a given code repository with a set of
 [standards for software](https://github.com/indigo-dc/sqa-baseline).
@@ -18,7 +22,15 @@ With this information the QAA provides two main outcomes:
    SQAaaS supports three of badges for software that, from lowest to highest
    levels of quality are: bronze, silver and gold.
 
-## Validating the results
+## What happens under the hood
+Unsurprinsingly, the assessment process uses a CI/CD pipeline in order to
+execute the complete set of tools selected to cover the required quality
+criteria.
+
+### Composing the pipeline
+The
+
+### Validating the results
 For tackling the validation, the SQAaaS API relies on the metadata defined in
 the tooling repository. To this end, it seeks for the `reporting` property
 within the definition of the tool whose output is being parsed. Consequently,
