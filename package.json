@@ -12,7 +12,7 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "deploy-gh-page": "npm install && npm run build && echo 'sqaaas-doc.eosc-synergy.eu' > build/CNAME  && gh-pages -d build/"
+    "deploy-gh-page": "npm install && npm run build && echo 'docs.sqaaas.eosc-synergy.eu' > build/CNAME  && gh-pages -d build/"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-beta.1",
