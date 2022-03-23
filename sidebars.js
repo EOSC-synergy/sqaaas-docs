@@ -30,6 +30,13 @@ module.exports = {
       items: [
           'pipeline_as_a_service/intro'
       ]
+    },
+    {
+      type: 'category',
+      label: 'Quality Assessment & Awarding',
+      items: [
+          'quality_assessment_and_awarding/intro'
+      ]
     }
   ]
 };
