@@ -44,7 +44,7 @@ broken down into.
 
 ## The process of making up a CI/CD pipeline
 <p align="center">
-  <img src="/static/img/pipeline_step_1.png"/>
+  <img src="/img/pipeline_step_1.png"/>
 </p>
 
 The Pipeline as a Service guides you through a series of steps where settings
