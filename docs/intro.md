@@ -47,7 +47,7 @@ own purpose and audience:
     organisations.
 
 <p align="center">
-  <img src="/static/img/sqaaas.png"/>
+  <img src="/img/sqaaas.png"/>
 </p>
 
 <!--
