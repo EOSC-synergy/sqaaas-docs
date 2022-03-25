@@ -31,12 +31,17 @@ and defined according to the following requirements:
 - the stages are run sequentially, and
 - the execution of the pipeline is not interrupted if a stage fails.
 
-### Validating the results
-For tackling the validation, the SQAaaS API relies on the metadata defined in
-the tooling repository. To this end, it seeks for the `reporting` property
-within the definition of the tool whose output is being parsed. Consequently,
-**if the `reporting` property has not been set, the API skips the validation**.
+## Certifying the results
+The selection and execution of the appropriate tools that take part in the
+quality assessment process must be accompanied by the validation of their
+outputs. Thus, it is not enough to just rely on the exit status of each tool,
+but also to inspect the output of the tool as the only way to ensure that any
+given quality attribute has been properly evaluated.
 
-# Configuration requirements
-As mentioned before, the QAA module relies on the information 1) tooling
-metadata, and 2) matchmaking process
+*Digital badges are the result of the certification process*. They are issued
+using the [Badgr platform](https://info.badgr.com/) that implements the [Open
+Badges specification](https://openbadges.org/). Hence, each badge has
+associated metadata that is used by the SQAaaS to store relevant data about
+the quality assessment process, such as pointers to the standard (with the
+definition of the quality criteria), or the build data, using permanent links
+to the continuous integration (CI) system.
