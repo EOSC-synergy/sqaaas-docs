@@ -22,7 +22,8 @@ module.exports = {
     },
     {
       type: 'doc',
-      id: 'What is SQAaaS'
+      id: 'intro',
+      label: 'What is SQAaaS'
     },
     {
       type: 'category',
