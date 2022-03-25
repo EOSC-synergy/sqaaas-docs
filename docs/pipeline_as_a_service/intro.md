@@ -30,9 +30,9 @@ The main feature and objective of the Pipeline as a Service module is to
 compose on-demand and ready-to-use CI/CD pipelines based on the feedback of
 the user. Thus, the web interface provides a means to distribute the resultant
 pipeline so it can be successfully added to the target code repository:
-1. Download the pipeline as a ZIP file, so that the developer needs to
+1. Downloading the pipeline as a ZIP file, so that the developer needs to
    manually extract & push to the desired repository.
-2. Create a [GitHub's pull requests](https://docs.github.com/en/pull-requests).
+2. Through a [GitHub's pull request](https://docs.github.com/en/pull-requests).
    This option will automatically create a pull request to a given target
    repository. By simply merging the pull request, the pipeline will be added
    to your code repository.

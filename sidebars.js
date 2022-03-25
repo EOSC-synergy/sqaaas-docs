@@ -22,13 +22,20 @@ module.exports = {
     },
     {
       type: 'doc',
-      id: 'intro'
+      id: 'What is SQAaaS'
     },
     {
       type: 'category',
       label: 'Pipeline as a Service',
       items: [
           'pipeline_as_a_service/intro'
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Quality Assessment & Awarding',
+      items: [
+          'quality_assessment_and_awarding/intro'
       ]
     }
   ]

@@ -1,4 +1,5 @@
 ---
+sidebar_label: Home
 sidebar_position: 1
 title: What is SQAaaS?
 ---
@@ -35,7 +36,9 @@ own purpose and audience:
   [services](https://eosc-synergy.github.io/service-qa-baseline/) standards.
   - Common audience: computational scientists, research software engineers
     (RSEs) and/or any developer code for tackling
-- The **Quality Assessment and Awarding** (QAA) module performs a comprehensive
+- The
+  [**Quality Assessment and Awarding**](quality_assessment_and_awarding/intro)
+  (QAA) module performs a comprehensive
   SQA analysis in accordance with the criteria from the aforementioned
   standards for software and services. As a result, this module provides not
   only a report summarizing the results of the assessment and pointers to
