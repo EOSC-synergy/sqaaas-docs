@@ -29,7 +29,8 @@ module.exports = {
       type: 'category',
       label: 'Pipeline as a Service',
       items: [
-          'pipeline_as_a_service/intro'
+          'pipeline_as_a_service/intro',
+          'pipeline_as_a_service/the_3_step_process'
       ]
     },
     {
