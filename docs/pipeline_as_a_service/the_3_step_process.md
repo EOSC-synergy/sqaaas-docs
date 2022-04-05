@@ -63,12 +63,13 @@ The Repository view offers additional features for more complex scenarios:
 credentials and environment customization.
 
 ##### Credentials
-Credentials are used whenever the pipeline is required to access an external
-service that enforces authentication, such as private code repositories or
-push-permissions to container registries.
+Credentials (`Add Credentials` section) are used whenever the pipeline is
+required to access an external service that enforces authentication, such as
+private code repositories or push-permissions to container registries.
 
-Since the current implementation of the SQAaaS relies on Jenkins CI, the [type
-of credentials are those supported by this technology]
+Since the current implementation of the SQAaaS uses the JePL library for the
+pipeline definition, which in turn relies on Jenkins CI, the [type of
+credentials are those supported by this latter technology]
 (https://www.jenkins.io/doc/book/using/using-credentials/).
 As a result, ***the credential identifier to be used has to be previously
 defined in Jenkins*** before being used in this section. This is a limitation
@@ -78,6 +79,14 @@ we expect to solve in future versions.
   <img src="/img/credentials.png"/>
 </p>
 
+Once the credentials' form has been filled out, click on `Add Credentials` for
+the SQAaaS to track them.
+
 ##### Environment
-The `Customize Environment` feature allows you to set environment variables
-that will be accessible at runtime. You can add as many variables as you like.
+The `Customize Environment` section allows you to set environment variables
+that will be accessible at runtime. You can add as many variables as you like
+by clicking on `Add Env Var` button.
+
+<p align="center">
+  <img src="/img/envvars.png"/>
+</p>
