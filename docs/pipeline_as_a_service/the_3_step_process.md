@@ -19,7 +19,7 @@ Once set, click on *Create pipeline* in order to start the 3-step process.
 
 ### The 3-step process
 1. The [Repositories](step_1_repositories.md)
-2. The Tools
+2. The [Tooling](step_2_tooling.md)
 3. The Quality Criteria
 
 ### The Summary view
