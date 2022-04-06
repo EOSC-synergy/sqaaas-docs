@@ -13,12 +13,74 @@ supported quality criteria. These tools are both generic-purpose and relative
 to specific programming languages. In the current version, the SQAaaS supports
 only Python and Java programming languages.
 
-We've got you covered for these SQAaaS-supported tools, so you do not need to
-define services for them. An exception to this rule might be when requiring a
-different version of the tool than the one supported.
+We've got you covered for these SQAaaS-supported tools: you do not need to
+define services for them. This is the reason why this step is optional (i.e.
+whenever the pipeline work relies entirely on the supported tools). A clear
+exception to this rule is when requiring a different version of the tool than
+the one supported.
 
 :::
 
-## How to define a service
-As already introduced, the *services* are container-based, and in particular,
-use the Docker solution.
+## How to define a tooling service
+As already introduced, the *tooling services* are based on Docker containers.
+Hence, there are two main ways to define them, either by **pulling** or
+**building**.
+
+### Pulling an image from a Docker registry
+The image has to be already available in a Docker registry such as [Docker
+Hub](https://hub.docker.com/). This registry is indeed the default one, so
+unless defined in the `Image Name` field, the pipeline at runtime will try to
+fetch it from Docker Hub platform.
+
+:::note Docker image name syntax
+
+The syntax for the `Image Name` field follows the [Docker syntax for image names](https://docs.docker.com/engine/reference/commandline/tag/#extended-description). Note that:
+- In order to use a registry other than Docker Hub (`registry-1.docker.io`)
+  you need to prefix the image name with such registry's hostname, such as
+  `myregistryhost:5000/fedora/httpd:version1.0`
+- You can use the values of the available environment variables to compose
+  the image name. This includes the ones defined in [Step 1](step_1_repositories##environment) and also the
+  ones exposed by the Jenkins plugins, such as the `GIT_*` variables from the
+  [Git plugin](https://plugins.jenkins.io/git/#environment-variables).
+
+:::
+
+The following figure showcases the process of defining a tooling service:
+
+<p align="center">
+  <img src="/img/tooling_pull.gif"/>
+</p>
+
+When clicking on `Add Service` the `python3-service` in the example will be
+available when defining the pipeline work in the next *Criteria* step.
+
+### Building the image from a Dockerfile description
+In some cases, a custom Docker image needs to be built out of a Dockerfile
+present in the code repository. The required parameters differ slightly from
+the ones used when fetching an existing image from an external registry:
+- `Dockerfile Location` (required) shall contain the relative path (taken from
+  the root path of the repository) to the Dockerfile. *No default value is set*
+- `Build arguments` (optional) contains a list of key-value items that will be
+  provided to Docker at build time. Follows the
+  [Docker convention for build arguments](https://docs.docker.com/engine/reference/commandline/build/#set-build-time-variables---build-arg).
+- `Would you like to push the Docker image to a registry?` (optional): if
+  required, the built image can be pushed to a Docker registry. To successfully
+  perform this operation credentials are needed. As it happened when [accessing
+  private repositories in Step 1](step_1_repositories.md#Credentials), we only
+  support for the time being credentials defined in the Jenkins service.
+  However, there is a workaround to save time if you just want to test the push
+  process out. This implies using a catch-all credential that will push the
+  resultant image to the EOSC-Synergy organization at Docker Hub.
+
+:::note
+
+If the `Dockerfile` is present at the root of the repository, you still need
+to set the value in the `Dockerfile Location`. This is due to the fact that
+both the *context* (directory name) and *dockerfile* (file name) values are
+taken from such value.
+
+:::
+
+<p align="center">
+  <img src="/img/tooling_build.gif"/>
+</p>
