@@ -84,3 +84,24 @@ taken from such value.
 <p align="center">
   <img src="/img/tooling_build.gif"/>
 </p>
+
+### Advanced options
+Through the Advanced options section, the Tooling view offers a more detailed
+configuration of some of the Docker parameters:
+- `Hostname` is the equivalent of
+  [Docker Compose's `hostname` property](https://docs.docker.com/compose/compose-file/compose-file-v3/#domainname-hostname-ipc-mac_address-privileged-read_only-shm_size-stdin_open-tty-user-working_dir),
+  which sets the container hostname so it can be reached from other containers.
+- Volumes:
+  - `Volume Type` refers to the type of the volume. Currently, [only `bind` is
+    supported](https://docs.docker.com/storage/bind-mounts/).
+  - `Volume Source` specifies the source path of the volume (for named volumes,
+    the name of the volume shall be used)
+  - `Volume Target` points to the destination path where the directory will be
+    mounted in the container.
+
+:::note
+
+You can add as many volumes as you need. Remember to click on `Add Volume`
+button for each defined volume.
+
+:::
