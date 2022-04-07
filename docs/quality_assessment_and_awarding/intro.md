@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Quality Assurance & Awarding
 ---
 
 The **Quality Assessment & Awarding (QAA)** module analyzes the level of
