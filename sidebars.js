@@ -30,7 +30,15 @@ module.exports = {
       label: 'Pipeline as a Service',
       items: [
           'pipeline_as_a_service/intro',
-          'pipeline_as_a_service/the_3_step_process'
+          'pipeline_as_a_service/the_3_step_process',
+          {
+              type: 'category',
+              label: 'Pipeline composition steps',
+              items: [
+                  'pipeline_as_a_service/step_1_repositories',
+                  'pipeline_as_a_service/step_2_tooling'
+              ]
+          }
       ]
     },
     {
