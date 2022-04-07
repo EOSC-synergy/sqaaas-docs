@@ -23,7 +23,7 @@ module.exports = {
     {
       type: 'doc',
       id: 'intro',
-      label: 'What is SQAaaS'
+      label: 'What is SQAaaS?'
     },
     {
       type: 'category',
