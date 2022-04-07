@@ -36,7 +36,8 @@ module.exports = {
               label: 'Pipeline composition steps',
               items: [
                   'pipeline_as_a_service/step_1_repositories',
-                  'pipeline_as_a_service/step_2_tooling'
+                  'pipeline_as_a_service/step_2_tooling',
+                  'pipeline_as_a_service/step_3_criteria'
               ]
           }
       ]
