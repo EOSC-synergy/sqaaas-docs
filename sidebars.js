@@ -39,7 +39,8 @@ module.exports = {
                   'pipeline_as_a_service/step_2_tooling',
                   'pipeline_as_a_service/step_3_criteria'
               ]
-          }
+          },
+          'pipeline_as_a_service/summary',
       ]
     },
     {

@@ -23,4 +23,10 @@ Once set, click on *Create pipeline* in order to start the 3-step process.
 3. The [Quality Criteria](step_3_criteria.md)
 
 ### The Summary view
+After completing the previous steps, the web interface will redirect you to the
+Summary view and show a popup message with the exit status result from the
+pipeline creation process.
 
+The Pipeline as a Service offers a number of features in order to visualize,
+share and try out your brand new CI/CD pipeline. We explain them on the
+[Summary section](summary.md).
