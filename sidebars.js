@@ -23,13 +23,24 @@ module.exports = {
     {
       type: 'doc',
       id: 'intro',
-      label: 'What is SQAaaS'
+      label: 'What is SQAaaS?'
     },
     {
       type: 'category',
       label: 'Pipeline as a Service',
       items: [
-          'pipeline_as_a_service/intro'
+          'pipeline_as_a_service/intro',
+          'pipeline_as_a_service/the_3_step_process',
+          {
+              type: 'category',
+              label: 'Pipeline composition steps',
+              items: [
+                  'pipeline_as_a_service/step_1_repositories',
+                  'pipeline_as_a_service/step_2_tooling',
+                  'pipeline_as_a_service/step_3_criteria'
+              ]
+          },
+          'pipeline_as_a_service/summary',
       ]
     },
     {

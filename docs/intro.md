@@ -1,5 +1,5 @@
 ---
-sidebar_label: Home
+slug: /
 sidebar_position: 1
 title: What is SQAaaS?
 ---
