@@ -16,10 +16,10 @@ module.exports = {
   deploymentBranch: 'gh-pages',
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'SQAaaS docs',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'EOSC-Synergy Logo',
+        src: 'img/logo-eosc-synergy.svg',
       },
       items: [
         {
