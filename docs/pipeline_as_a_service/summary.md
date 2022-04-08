@@ -56,10 +56,22 @@ existing one) for the pipeline to work.
 
 ### Via GitHub's pull request
 In the event that the target repository is a GitHub repository the most
-straightforward way to add your pipeline is to use the pull request feature.
+straightforward way to add your pipeline is to use the `Pull request` feature.
 You just need to add the URL and target branch and the pull request will be
 automatically created. Heading to GitHub and merging the pull request are the
 only steps to make the new pipeline available in your repository.
 
 ## Execute 
+It is a good practice to run the CI/CD pipeline before being added to the
+target repository in order to detect any defect or misbehavior. The `Try out`
+button will execute the pipeline in the default Jenkins instance used by the
+SQAaaS platform and, once completed, provide the pointers so you can review
+the outputs.
 
+:::note
+
+The `Try out` feature might ask you for the URL and branch of the target 
+repository. This step is required whenever this target repository has not been
+defined as part of the [first step](step_1_repositories.md).
+
+:::
