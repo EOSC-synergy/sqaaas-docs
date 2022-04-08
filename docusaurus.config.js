@@ -13,7 +13,6 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'eosc-synergy', // Usually your GitHub org/user name.
   projectName: 'sqaaas-docs', // Usually your repo name.
-  deploymentBranch: 'gh-pages',
   themeConfig: {
     navbar: {
       title: 'SQAaaS docs',
