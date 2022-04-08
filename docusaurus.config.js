@@ -5,14 +5,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'SQAaaS documentation site',
   tagline: 'Building quality research software',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://docs.sqaaas.eosc-synergy.eu',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   // onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'eosc-synergy', // Usually your GitHub org/user name.
-  projectName: 'SQAaaS', // Usually your repo name.
+  projectName: 'sqaaas-docs', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
   themeConfig: {
     navbar: {
       title: 'My Site',
