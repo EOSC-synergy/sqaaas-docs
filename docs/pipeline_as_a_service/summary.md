@@ -33,6 +33,33 @@ Additionally, a series of bash scripts are generated when performing work on
 [external repositories](step_1_repositories.md) since the workspace changes.
 
 ## Share
+The ultimate goal of the Pipeline as a Service module is to generate working
+pipelines that can be readily used in the code repositories. The Summary view
+offers two ways to add your pipeline to the target repository:
+
+### Download, commit & push
+The initial message that notifies the pipeline's creation success contains a 
+`Download` button, which will return a ZIP file with the aforementioned JePL
+files. Hence, you just need to extract and add (commit & push) these files to
+your code repository and the pipeline will be ready to be executed.
+
+:::note
+
+The pipeline will be automatically triggered with no further action only in the
+case that an existing Jenkins CI service is already configured to scan this
+repository (e.g. when the repository belongs to a GitHub organisation that is 
+monitored by a given Jenkins instance). Otherwise, you will need to [set up a 
+Jenkins service](https://www.jenkins.io/doc/book/installing/) (or configure an
+existing one) for the pipeline to work.
+
+:::
+
+### Via GitHub's pull request
+In the event that the target repository is a GitHub repository the most
+straightforward way to add your pipeline is to use the pull request feature.
+You just need to add the URL and target branch and the pull request will be
+automatically created. Heading to GitHub and merging the pull request are the
+only steps to make the new pipeline available in your repository.
 
 ## Execute 
 
