@@ -18,13 +18,16 @@ The SQAaaS is aligned with quality standards for
 [software](https://github.com/indigo-dc/sqa-baseline) and
 [services](https://github.com/EOSC-synergy/service-qa-baseline), so each piece
 of work performed by the pipeline shall be associated with one of the criteria
-formulated by those standards. Hence, the Criteria view enforces the user to
-select the ID of a quality criterion before moving on to the definition of the
-actual piece of work.
+formulated by those standards. Hence, the definition of work within the Criteria
+view starts by selecting the ID of a quality criterion before moving on.
 
 <p align="center">
   <img src="/img/criteria_selection.png"/>
 </p>
+
+You will notice that the web interface takes some seconds to load the available
+criteria. This is because the corresponding metadata is loaded dynamically from
+a remote repository every time the Criteria view is accessed.
 
 :::caution
 
