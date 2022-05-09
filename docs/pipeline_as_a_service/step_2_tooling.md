@@ -27,10 +27,9 @@ Hence, there are two main ways to define them, either by **pulling** or
 **building**.
 
 ### Pulling an image from a Docker registry
-The image has to be already available in a Docker registry such as [Docker
-Hub](https://hub.docker.com/). This registry is indeed the default one, so
-unless defined in the `Image Name` field, the pipeline at runtime will try to
-fetch it from Docker Hub platform.
+The image has to be already available in a Docker registry for this feature to
+work. By default, the pipeline will use [Docker Hub](https://hub.docker.com/).
+Follow the steps on "Docker image name syntax" to use a different registry.
 
 :::note Docker image name syntax
 
