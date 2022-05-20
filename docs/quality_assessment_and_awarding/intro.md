@@ -44,4 +44,9 @@ Badges specification](https://openbadges.org/). Hence, each badge has
 associated metadata that is used by the SQAaaS to store relevant data about
 the quality assessment process, such as pointers to the standard (with the
 definition of the quality criteria), or the build data, using permanent links
-to the continuous integration (CI) system.
+to the continuous integration (CI) system. The image below shows the metadata,
+as it is displayed by Badgr, for an awarded badge:
+
+<p align="center">
+  <img src="/img/badge_metadata.png" alt="Badge metadata"/>
+</p>
