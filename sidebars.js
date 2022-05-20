@@ -47,7 +47,8 @@ module.exports = {
       type: 'category',
       label: 'Quality Assessment & Awarding',
       items: [
-          'quality_assessment_and_awarding/intro'
+          'quality_assessment_and_awarding/intro',
+          'quality_assessment_and_awarding/synergy_badging_approach'
       ]
     }
   ]
