@@ -26,7 +26,7 @@ each badge level:
 
 :::info Software criteria baseline
 
-The codes showcases in the table above are defined in the
+The codes showcased in the table above (e.g. `QC.Acc`) are defined in the
 [standard](https://indigo-dc.github.io/sqa-baseline/) to which the current
 implementation of the SQAaaS is aligned.
 
@@ -35,5 +35,33 @@ implementation of the SQAaaS is aligned.
 and the images corresponding to each level:
 
 <p align="center">
-  <img src="/img/badge_software_all.png"/>
+  <img src="/img/badges_software_all.png"/>
+</p>
+
+## Badges for services
+The following table summarizes the service criteria that is associated to
+each badge level:
+
+| | Bronze | Silver | Gold |
+| ----------- | :-----------: | :-----------: | :--------: |
+| Deployment (`SvcQC.Dep`) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| API Testing (`SvcQC.API`) | | | :heavy_check_mark: |
+| Integration Testing (`SvcQC.Int`) | | | :heavy_check_mark: |
+| Functional Testing (`SvcQC.Fun`) | | :heavy_check_mark: | :heavy_check_mark: |
+| Performance Testing (`SvcQC.Per`) | | | :heavy_check_mark: |
+| Security Dynamic Analysis (`SvcQC.Sec`) | | :heavy_check_mark: | :heavy_check_mark: |
+| Documentation (`SvcQC.Doc`) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+
+:::info Service criteria baseline
+
+The codes showcased in the table above (e.g. `SvcQC.Dep`) are defined in the
+[standard](https://eosc-synergy.github.io/service-qa-baseline/) to which the current
+implementation of the SQAaaS is aligned.
+
+:::
+
+and the images corresponding to each level:
+
+<p align="center">
+  <img src="/img/badges_service_all.png"/>
 </p>
