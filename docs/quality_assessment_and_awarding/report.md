@@ -20,10 +20,9 @@ criterion's overall success.
 
 :::note
 
-As stated throughout the docs, the current implementation is aligned with the
-[A set of Common Software Quality Assurance Baseline Criteria for Research
-Projects](https://indigo-dc.github.io/sqa-baseline/) document, and thus, the
-codes that identify the subcriteria are defined here.
+The codes that identify the subcriteria are aligned, as stated throughout the
+docs, with the [A set of Common Software Quality Assurance Baseline Criteria
+for Research Projects](https://indigo-dc.github.io/sqa-baseline/) document.
 
 :::
 
