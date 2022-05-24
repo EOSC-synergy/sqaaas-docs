@@ -33,3 +33,11 @@ reaches a minimum level of quality. This is based on the fact that, similarly
 to the subcriteria covered above, not all the criteria have the same level of
 importance. We have previously established those levels in the
 [Badging in EOSC-Synergy](synergy_badging_approach.md).
+
+Whenever the assessed code repository has reached any of the required levels
+of quality, a digital badge will be displayed on top of the report as shown
+in the next image:
+
+<p align="center">
+  <img src="/img/award.png"/>
+</p>
