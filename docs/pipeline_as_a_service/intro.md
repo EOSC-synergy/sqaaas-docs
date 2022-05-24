@@ -1,5 +1,5 @@
 ---
-title: Pipeline as a Service
+title: Why Pipeline as a Service?
 ---
 
 The **Pipeline as a Service** module offers developers with a graphical means
