@@ -79,3 +79,51 @@ repository. This step is required whenever this target repository has not been
 defined as part of the [first step](step_1_repositories.md).
 
 :::
+
+## Making changes
+The previous [Execute](#execute) feature provides important information about
+how our CI/CD pipeline will behave when running in our own code repositories.
+Therefore, making changes is common task when creating a pipeline.
+
+The most obvious way to make modifications to the current pipeline is to go
+back to the [Repositories](step_1_repositories.md) and/or
+[Criteria](step_2_criteria.md) steps and modify the introduced data, re-running
+the pipeline, and repeating this process until we get the expected behavior or
+results.
+
+### Maintaining the "definitive" pipeline
+Once you have a base pipeline, created through the SQAaaS portal, it is quite
+easy to make small adjustments acting directly into the pipeline code, which,
+as already mentioned, uses the [JePL library
+syntax](https://indigo-dc.github.io/jenkins-pipeline-library). *When more
+complex changes are needed, our recommendation is to create a new pipeline
+from scratch using the portal*.
+
+:::caution Pipelines are not preserved in the SQAaaS portal
+
+If you did not download and/or pull-request your pipeline after the session in
+the SQAaaS portal gets closed, you are at risk of losing it. This is due to the
+fact that the SQAaaS does not yet support loading existing pipelines.
+
+However, there might be a chance to get it back. The so-called *pipeline
+repositories* are created by the SQAaaS platform as part of the
+[Execute](#execute) process. They contain the JePL files, and depending on
+how it was configured they also might have a copy of the code to analyse. By
+default, the name of this code repository matches:
+```
+pipeline_repository == 'https://github.com/' + github_organisation + pipeline_name + '.sqaaas'
+```
+where the `pipeline_name` was the value provided in
+[the step zero](the_2_step_process.md) of the Pipeline as a Service module. So
+if you used the current SQAaaS production instance and named your pipeline as
+"my_pipeline", the resultant name for th pipeline repository is:
+```
+https://github.com/eosc-synergy/my_pipeline.sqaaas`
+```
+
+Try to reach this repository to recover your pipeline.
+
+*Disclaimer: the alternative presented here might not work since it depends on
+the presence of temporary code repositories*
+
+:::
