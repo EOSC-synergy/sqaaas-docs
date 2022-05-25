@@ -51,6 +51,13 @@ module.exports = {
           'quality_assessment_and_awarding/operation',
           'quality_assessment_and_awarding/report'
       ]
+    },
+    {
+      type: 'category',
+      label: 'Advanced topics',
+      items: [
+          'advanced/jenkins_scan_organisation'
+      ]
     }
   ]
 };
