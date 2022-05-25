@@ -105,23 +105,8 @@ If you did not download and/or pull-request your pipeline after the session in
 the SQAaaS portal gets closed, you are at risk of losing it. This is due to the
 fact that the SQAaaS does not yet support loading existing pipelines.
 
-However, there might be a chance to get it back. The so-called *pipeline
-repositories* are created by the SQAaaS platform as part of the
-[Execute](#execute) process. They contain the JePL files, and depending on
-how it was configured they also might have a copy of the code to analyse. By
-default, the name of this code repository matches:
-```
-pipeline_repository == 'https://github.com/' + github_organisation + pipeline_name + '.sqaaas'
-```
-where the `pipeline_name` was the value provided in
-[the step zero](the_2_step_process.md) of the Pipeline as a Service module. So
-if you used the current SQAaaS production instance and named your pipeline as
-"my_pipeline", the resultant name for th pipeline repository is:
-```
-https://github.com/eosc-synergy/my_pipeline.sqaaas`
-```
-
-Try to reach this repository to recover your pipeline.
+However, there might be a chance to get it back. Try to access the generated
+[pipeline repository](../advanced/pipeline_repository.md).
 
 *Disclaimer: the alternative presented here might not work since it depends on
 the presence of temporary code repositories*
