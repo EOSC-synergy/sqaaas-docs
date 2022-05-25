@@ -27,7 +27,7 @@ work is broken down into several stages mapped to criteria IDs. Check the
 detailed info about the capabilities of the library.
 - `docker-compose.yml`: JePL leverages
 [Docker Compose](https://docs.docker.com/compose/compose-file/) to deploy the
-required [tooling services](step_2_tooling.md).
+required [tooling services](step_2_criteria.md).
 
 Additionally, a series of bash scripts are generated when performing work on
 [external repositories](step_1_repositories.md) since the workspace changes.
