@@ -26,7 +26,7 @@ for Research Projects](https://indigo-dc.github.io/sqa-baseline/) document.
 
 :::
 
-### Awarding (aka Badges)
+### Awarding through Badges
 
 Reporting is complemented with awarding when the software being analysed
 reaches a minimum level of quality. This is based on the fact that, similarly

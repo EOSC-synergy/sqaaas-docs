@@ -43,3 +43,18 @@ the *"External repo for documentation?"* checkbox:
 <p align="center">
   <img src="/img/qaa_docs_repo.png"/>
 </p>
+
+## Tools for the Assessment
+
+The SQAaaS platform executes multiple checks for assessing each criterion and 
+associated subcriteria. According to the given criterion, the check might
+consist on ensuring the presence of a set of files (e.g. licenses or code of 
+conduct for the documentation criterion) or running existing open source tools
+according to the programming language in use.
+
+In the current version, the SQAaaS provides support for the following tools: 
+
+| | | Python | Golang | Ruby | Java | JavaScript | JSON | Dockerfile |
+| | ----------- | :-----------: | :-----------: | :--------: | :--------: | :--------: | :--------: | :--------: |
+| Code Style (`QC.Sty`) | flake8 | staticcheck | rubocop | checkstyle | stylelint | jsonlint | hadolint |
+| Security Static Analysis (`QC.Sec`) | bandit | gosec | | | | | |
