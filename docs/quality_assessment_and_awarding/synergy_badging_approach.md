@@ -14,13 +14,13 @@ each badge level:
 | ----------- | :-----------: | :-----------: | :--------: |
 | Accessibility (`QC.Acc`) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Code Management (`QC.Man`) | | | :heavy_check_mark: |
-| Code Metadata (`QC.Met`) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Code Style (`QC.Sty`) | | :heavy_check_mark: | :heavy_check_mark: |
+| Code Metadata (`QC.Met`) | | :heavy_check_mark: | :heavy_check_mark: |
+| Code Style (`QC.Sty`) | | | :heavy_check_mark: |
 | Code Workflow (`QC.Wor`) | | | :heavy_check_mark: |
 | Delivery (`QC.Del`) | | | :heavy_check_mark: |
 | Documentation (`QC.Doc`) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Licensing (`QC.Lic`) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Security Static Analysis (`QC.Sec`) | | :heavy_check_mark: | :heavy_check_mark: |
+| Security Static Analysis (`QC.Sec`) | | | :heavy_check_mark: |
 | Unit Testing (`QC.Uni`) | | | :heavy_check_mark: |
 | Versioning (`QC.Ver`) | | :heavy_check_mark: | :heavy_check_mark: |
 
