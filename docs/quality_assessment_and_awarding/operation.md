@@ -38,7 +38,7 @@ repository for the documentation, other than the one that hosts the code. This
 is a common practice, so in case that your
 [docs-as-code](https://www.writethedocs.org/guide/docs-as-code/) are not
 maintained in the same repo as the code, be sure to add this URL by clicking on
-the *"External repo for documentation?" checkbox:
+the *"External repo for documentation?"* checkbox:
 
 <p align="center">
   <img src="/img/qaa_docs_repo.png"/>
