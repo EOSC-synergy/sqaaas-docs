@@ -49,7 +49,8 @@ module.exports = {
           'quality_assessment_and_awarding/intro',
           'quality_assessment_and_awarding/synergy_badging_approach',
           'quality_assessment_and_awarding/operation',
-          'quality_assessment_and_awarding/report'
+          'quality_assessment_and_awarding/report',
+          'quality_assessment_and_awarding/share'
       ]
     },
     {
