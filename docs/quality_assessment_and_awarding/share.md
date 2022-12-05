@@ -5,7 +5,7 @@ title: Sharing the badges
 The digital badges obtained when assessing digital assets with SQAaaS can be
 shared in popular code and data repository platforms. Here we offer two ways of
 doing so, either by using a custom entry that uses the EOSC-Synergy badge image
-or through the [shields.io][https://shields.io/] common badge solution. 
+or through the [shields.io](https://shields.io/) common badge solution. 
 
 The specific code in Markdown, ready to be copy-pasted, is available for each
 of the options, so that when the badge is clicked, you will be redirected to a
@@ -30,7 +30,7 @@ which would be rendered as:
 
 ### shields.io badge
 
-The popular [shields.io][https://shields.io/] can be also be used to share a
+The popular [shields.io](https://shields.io/) can be also be used to share a
 SQAaaS badge:
 
 ```markdown
