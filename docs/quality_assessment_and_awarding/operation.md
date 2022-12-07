@@ -2,47 +2,78 @@
 title: Triggering the Assessment
 ---
 
-Running a quality assessment for your code repository is a quite
-straightforward task, you just need to provide its URL and click on *"Start
-Assessment"* button as follows:
+Running a quality assessment for your code repository is a fairly
+straightforward task. First, you need to choose the type of digital asset you
+want to evaluate --i.e. source code, services or data-- in the selection tab
+panel:
 
 <p align="center">
-  <img src="/img/qaa.gif"/>
+  <img src="/img/qaa.png"/>
 </p>
+
+Once all the required inputs have been filled in, clicking on *"Start Assessment"*
+button will trigger the assessment process of the selected digital object.
 
 The state of the assessment will be displayed in the popup that appears once
 started. Once finished successfully, you will be taken to the results view.
 
-:::info
+### Source code (Software)
 
-There are two main stages it will go through, 1) *the pipeline creation
-and execution*, 2) *the validation of the results*. The former relies on the core
-functionality provided by the Pipeline as a Service in order to compose and
-run a pipeline with all the supported quality criteria. The specific tools and
-commands to run are built upon the
-[SQAaaS tooling metadata](https://github.com/eosc-synergy/sqaaas-tooling).
-
-Once having the results from the pipeline, the next step is to validate the
-obtained results. This task is done with the aid of the
-[SQAaaS reporting](https://github.com/eosc-synergy/sqaaas-reporting) component,
-a plugin-based tool that parses each output and estimates whether each
-quality criterion (as well as associated subcriteria) has been successfully
-fulfilled by the code being analysed.
-
-:::
-
-#### Settings
-
-Current customization boils down to the specification of a different code
-repository for the documentation, other than the one that hosts the code. This
-is a common practice, so in case that your
-[docs-as-code](https://www.writethedocs.org/guide/docs-as-code/) are not
-maintained in the same repo as the code, be sure to add this URL by clicking on
-the *"External repo for documentation?"* checkbox:
+In order to perform the assessment for a piece of software, the SQAaaS requires
+only the URL of the source code repository. This is commonly the only
+requirement, but there are a few more settings that can be used to customize
+the input:
+- `Repository URL`: the URL of the source code repository. This shall point
+  only to the root path, so do not embed any info in the URL, such as the one
+  related to the branch. This latter, the branch info, can be provided through
+  the specific `Branch` input. 
+- `External documentation repository URL` (optional): documentation, in the
+  form of [docs-as-code](https://www.writethedocs.org/guide/docs-as-code/)
+  approach, is part of the quality assessment, so the QAA module requires
+  access to the documentation files. They are commonly placed in the code
+  repository, so this input is only expected whenever the documentation is
+  maintained independently. As in the previous case, a different branch other
+  than the default can be specified through the `Branch` input. 
 
 <p align="center">
-  <img src="/img/qaa_docs_repo.png"/>
+  <img src="/img/qaa_code.gif"/>
 </p>
+
+
+### Service
+
+Services imply a composite of software products (code) that are deployed
+together in order to provide value to the user. In this section services can
+be deployed using any of the available orchestration tools.
+- `Repository URL`: the URL of the repository that contains the configuration
+  files needed to orchestrate the service.
+- `Choose a tool`: after selecting any of the supported tools, you will be able
+  to customize it based on the information required by each one. This usually
+  involves pointing to the main configuration file or path that will be used
+  for the deployment part, and the selection of the cloud site where it will 
+  take place.
+
+<p align="center">
+  <img src="/img/qaa_srv.gif"/>
+</p>
+
+### FAIR (data)
+
+The QAA module offers also the assessment of datasets via their compliance with
+the FAIR principles. This is done by relying on FAIR assessment tools that can
+be choosen through the `Choose a tool` menu. 
+
+<p align="center">
+  <img src="/img/qaa_fair.gif"/>
+</p>
+
+:::note
+
+Make sure to hit `+ Add Tool` button once all the required info has been added 
+to the tool's settings. This is applicable for all the digital assets that
+require the definition of tools, i.e. services and datasets.
+
+:::
 
 ## Tools for the Assessment
 
