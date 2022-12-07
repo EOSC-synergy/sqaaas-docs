@@ -58,7 +58,8 @@ module.exports = {
       label: 'Advanced topics',
       items: [
           'advanced/jenkins_scan_organisation',
-          'advanced/pipeline_repository'
+          'advanced/pipeline_repository',
+          'advanced/tools_for_the_assessment'
       ]
     }
   ]
