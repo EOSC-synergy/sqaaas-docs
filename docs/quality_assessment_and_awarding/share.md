@@ -3,14 +3,22 @@ title: Sharing the badges
 ---
 
 The digital badges obtained when assessing digital assets with SQAaaS can be
-shared in popular code and data repository platforms. Here we offer two ways of
+shared within code and data repository platforms. Here we offer two ways of
 doing so, either by using a custom entry that uses the EOSC-Synergy badge image
 or through the [shields.io](https://shields.io/) common badge solution.
 
-The specific code in Markdown is available for each
-of the options, so that when the badge is clicked, you will be redirected to a
-[Badgr](https://info.badgr.com/) page with all the information about the
-quality attributes of the badge.
+The specific code in Markdown is available for each of the options through the
+quality report as it can be seen in the image below, and throughout the current
+document, the specific Markdown excerpts will also be covered.
+
+<p align="center">
+  <img src="/img/badge_sharing.png"/>
+</p>
+
+The resultant images, displayed usually through the README document, are linked
+to the corresponding badge metadata, accessible through
+[Badgr](https://info.badgr.com/) page. In the following sections the different
+options to share SQAaaS badges are explained.
 
 :::note
 The only piece of information you need to change in the following examples is
