@@ -1,0 +1,3 @@
+FROM node:latest
+
+RUN npm init docusaurus@latest
