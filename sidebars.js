@@ -49,7 +49,8 @@ module.exports = {
           'quality_assessment_and_awarding/intro',
           'quality_assessment_and_awarding/synergy_badging_approach',
           'quality_assessment_and_awarding/operation',
-          'quality_assessment_and_awarding/report'
+          'quality_assessment_and_awarding/report',
+          'quality_assessment_and_awarding/share'
       ]
     },
     {
@@ -57,7 +58,8 @@ module.exports = {
       label: 'Advanced topics',
       items: [
           'advanced/jenkins_scan_organisation',
-          'advanced/pipeline_repository'
+          'advanced/pipeline_repository',
+          'advanced/tools_for_the_assessment'
       ]
     }
   ]
