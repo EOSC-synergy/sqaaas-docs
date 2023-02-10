@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       this_repo:
         commands:
-        - GIT_USER=$GIT_USER_1 GIT_PASS=$GIT_PASS_1 yarn deploy
+        - env GIT_USER=$GIT_USER_1 GIT_PASS=$GIT_PASS_1 yarn deploy
         container: qc.doc_bumpy-thistle-lionfish
 timeout: 5400
