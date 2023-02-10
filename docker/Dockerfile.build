@@ -1,4 +1,5 @@
 FROM node:latest
 
 COPY ./ ./ 
+RUN ls -l 
 RUN yarn install --frozen-lockfile 
