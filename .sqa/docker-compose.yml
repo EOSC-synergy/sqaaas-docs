@@ -1,9 +1,7 @@
 services:
   qc.doc_bumpy-thistle-lionfish:
     command: sleep 6000000
-    build:
-      context: .
-      dockerfile: docker/Dockerfile.build
+    image: node:latest
     volumes:
     - source: ./
       target: /sqaaas-build
