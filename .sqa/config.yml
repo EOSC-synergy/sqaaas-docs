@@ -1,6 +1,6 @@
 config:
   credentials:
-  - id: orviz-github
+  - id: orviz-github-basic
     password_var: GIT_PASS_1
     type: username_password
     username_var: GIT_USER_1
