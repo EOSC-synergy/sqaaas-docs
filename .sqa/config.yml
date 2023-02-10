@@ -1,17 +1,20 @@
 config:
   credentials:
-      - id: userpass_sqaaas_web
-        username_var: GIT_USER
-        password_var: GIT_PASSWORD
-
+  - id: orviz-github
+    password_var: GIT_PASS_1
+    type: username_password
+    username_var: GIT_USER_1
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/1.7.8
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
 sqa_criteria:
-  qc_doc:
+  QC.Doc:
     repos:
-      doc-sqaaas:
-        container: node
+      this_repo:
         commands:
-          - > 
-            env GIT_ASKPASS=/doc-sqaaas/.git_credential_helper.sh
-            npm --prefix /doc-sqaaas run deploy-gh-page --
-            --user="Diana M. Naranjo <dnaranjo@i3m.upv.es>"
-            --repo=https://${GIT_USER}@github.com/eosc-synergy/doc-sqaaas
+        - GIT_USER=$GIT_USER_1 GIT_PASS=$GIT_PASS_1 yarn deploy
+        container: qc.doc_bumpy-thistle-lionfish
+timeout: 5400
