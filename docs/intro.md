@@ -9,9 +9,9 @@ practices when it comes to developing software in research environments.
 
 The SQAaaS platform is developed by CSIC, LIP and UPV.
 
-<a href="https://www.csic.es/en" target="_blank" style={{'text-decoration':'none'}}> <img src="../static/img/logo-csic.png" height="60" style={{margin:'0 18px 0 0'}} /> </a>
-<a href="https://www.lip.pt/?lang=en" target="_blank" style={{'text-decoration':'none'}}> <img src="../static/img/logo-lip.png" height="60" style={{margin:'0 18px'}} /> </a>
-<a href="https://www.upv.es/en" target="_blank" style={{'text-decoration':'none'}}> <img src="../static/img/logo-upv.png" height="60" style={{margin:'0 18px'}} /> </a>
+<a href="https://www.csic.es/en" target="_blank" style={{textDecoration:'none'}}> <img src="/img/logo-csic.png" height="60" style={{margin:'0 18px 0 0'}} /> </a>
+<a href="https://www.lip.pt/?lang=en" target="_blank" style={{textDecoration:'none'}}> <img src="/img/logo-lip.png" height="60" style={{margin:'0 18px'}} /> </a>
+<a href="https://www.upv.es/en" target="_blank" style={{textDecoration:'none'}}> <img src="/img/logo-upv.png" height="60" style={{margin:'0 18px'}} /> </a>
 
 ## Why care about quality in research software?
 It often happens that research software is not produced in accordance with some
