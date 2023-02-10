@@ -2,7 +2,7 @@ services:
   qc.doc_bumpy-thistle-lionfish:
     command: sleep 6000000
     build:
-      context: ../docker
+      context: ./docker
       dockerfile: Dockerfile.build
     volumes:
     - source: ./
