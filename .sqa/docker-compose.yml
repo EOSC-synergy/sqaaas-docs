@@ -1,7 +1,7 @@
 services:
   qc.doc_bumpy-thistle-lionfish:
     command: sleep 6000000
-    image: node:latest
+    image: awesometic/docusaurus:latest
     volumes:
     - source: ./
       target: /sqaaas-build
