@@ -18,6 +18,8 @@ sqa_criteria:
         - |
           yarn install --frozen-lockfile
         - |
+          yarn build
+        - |
           env GIT_USER=$GIT_USER_1 GIT_PASS=$GIT_PASS_1 /usr/local/bin/yarn deploy
         container: qc.doc_bumpy-thistle-lionfish
 timeout: 5400
