@@ -48,9 +48,24 @@ exceptions to the default rules through the use of configuration files (as long
 as the tool supports them).
 
 Throughout this section we summarize how to alter the default behavior of the
-standards used by the tools supported in the SQAaaS platform.
+standards used by the tools supported in the SQAaaS platform. It is important
+to stress that the configuration file/s must exist in the version of the code
+repository that we are assessing through the SQAaaS, and placed in the location
+expected by the tool.
 
 ### flake8 (Python)
+
+[`flake8`](https://flake8.pycqa.org/) allows
+[3 different locations](https://flake8.pycqa.org/en/latest/user/configuration.html#configuration-locations)
+for the configuration files. Either way, you need to have a `[flake8]` section
+where you will add your exceptions. An example that excludes a set of rules and
+defines a maximum line length of 120, would be:
+
+```
+[flake8]
+extend-ignore = E402, F841, F821, E722
+max-line-length = 120
+```
 
 ### checkstyle (Java)
 
