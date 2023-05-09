@@ -1,3 +1,0 @@
-FROM node:latest
-
-RUN yarn install --frozen-lockfile 
