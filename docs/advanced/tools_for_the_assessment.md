@@ -37,3 +37,52 @@ summarizes the current tools supported by the SQAaaS platform:
 |                                   |   Markdown   |   reStructuredText    |
 |-----------------------------------|:------------:|:---------------------:|
 | Documentation (QC.Doc)            | markdownlint | restructuredtext-lint |
+
+## Customizing the behavior of tools: linting and styling
+
+Style rules, and in some particular circumstances, those related to linting 
+aspects might not be considered when assessing the code. Legacy or code that
+has been developed over a extended period of time cannot be easily adapted to
+new quality standards or trends. As a result, the SQAaaS allows passing
+exceptions to the default rules through the use of configuration files (as long
+as the tool supports them).
+
+Throughout this section we summarize how to alter the default behavior of the
+standards used by the tools supported in the SQAaaS platform.
+
+### flake8 (Python)
+
+### checkstyle (Java)
+
+[`checkstyle`](https://checkstyle.sourceforge.io/) is currently supported as a
+Maven's plugin. Following the documentation, the
+[Sun code style](https://checkstyle.sourceforge.io/sun_style.html) is the one
+used by default. Based on the 
+[Maven's goal `checkstyle:check`](https://maven.apache.org/plugins/maven-checkstyle-plugin/check-mojo.html#checkstyle-check),
+you can define your own rules by passing the
+[`configLocation` parameter](https://maven.apache.org/plugins/maven-checkstyle-plugin/checkstyle-mojo.html#configLocation),
+such as in:
+
+```
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-checkstyle-plugin</artifactId>
+    <version>3.2.2</version>
+    <configuration>
+        <configLocation>checkstyle.xml</configLocation>
+    </configuration>
+</plugin>
+``` 
+
+Note that your checkstyle's plugin version might be different from the one
+used in this example. The `configLocation` points to a file named
+`checkstyle.xml` and this is where all modifications shall be added. For
+instance, if we would like to increase Sun's default line length to 120 chars
+(by default is 80), we would modify Sun's rules (already added in
+`checkstyle.xml`) as follows:
+
+```
+<module name="LineLength">
+    <property name="max" value="120"/>
+</module>
+```
