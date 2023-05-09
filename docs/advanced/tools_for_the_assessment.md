@@ -16,3 +16,24 @@ obtained results. This task is done with the aid of the
 a plugin-based tool that parses each output and estimates whether each
 quality criterion (as well as associated subcriteria) has been successfully
 fulfilled by the code being analysed.
+
+## Tool breakdown
+
+Validating some of the defined quality criteria requires the support of
+specific tools, based commonly on the programming language/s in use. Examples
+range from testing frameworks and linters to style checkers. The table below 
+summarizes the current tools supported by the SQAaaS platform:
+
+|                                   | VCS |
+|-----------------------------------|:---:|
+| Code Management (QC.Man, QC.Acc)  | git |
+
+|                                   | Python |    Golang   |   Ruby  |    Java    | Javascript |   JSON   | Dockerfile |
+|-----------------------------------|:------:|:-----------:|:-------:|:----------:|:----------:|:--------:|:----------:|
+| Code Style (QC.Sty)               | flake8 | staticcheck | rubocop | checkstyle |  stylelint | jsonlint |  hadolint  |
+| Security Static Analysis (QC.Sec) | bandit |    gosec    |         |            |            |          |            |
+
+
+|                                   |   Markdown   |   reStructuredText    |
+|-----------------------------------|:------------:|:---------------------:|
+| Documentation (QC.Doc)            | markdownlint | restructuredtext-lint |
