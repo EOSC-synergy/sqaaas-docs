@@ -66,8 +66,8 @@ Note that your checkstyle's plugin version might be different from the one
 used in this example. The `configLocation` points to a file named
 `checkstyle.xml` and this is where all modifications shall be added. For
 instance, if we would like to increase Sun's default line length to 120 chars
-(by default is 80), we would modify Sun's rules (already added in
-`checkstyle.xml`) as follows:
+(by default is 80), we would modify Sun's rules (assuming they have been already
+added in `checkstyle.xml`) as follows:
 
 ```
 <module name="LineLength">
