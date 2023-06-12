@@ -18,7 +18,7 @@ download the report in PDF and PNG formats.
 
 Then this JSON file can be used to recover the QAA report by heading to the
 QAA module's input page and using it in the `Load QAA report from previous
-assessment` dropdown menu as showed in the image below:
+assessment` dropdown menu as shown in the image below:
 
 <p align="center">
   <img src="/img/qaa_load_qa_report.gif"/>
