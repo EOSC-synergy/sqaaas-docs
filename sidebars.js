@@ -51,7 +51,8 @@ module.exports = {
           'quality_assessment_and_awarding/operation',
           'quality_assessment_and_awarding/report',
           'quality_assessment_and_awarding/share',
-          'quality_assessment_and_awarding/customize'
+          'quality_assessment_and_awarding/customize',
+          'quality_assessment_and_awarding/load_report'
       ]
     },
     {
