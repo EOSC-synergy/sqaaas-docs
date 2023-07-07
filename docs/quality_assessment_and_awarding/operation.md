@@ -35,6 +35,15 @@ the input:
   maintained independently. As in the previous case, a different branch other
   than the default can be specified through the `Branch` input. 
 
+In case of a private repository, a personal access token is required to read the repository.
+It is an alternative to using passwords for authentication and are intended to access resources on behalf of yourself:
+- `Username`: the username on the repository platform.
+- `Personal access token`: must have at least permission to read the repository.
+
+Documentation about the creation of access tokens can be found here for
+[GitHub](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
+and [GitLab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html).
+
 <p align="center">
   <img src="/img/qaa_code.gif"/>
 </p>
@@ -52,6 +61,15 @@ be deployed using any of the available orchestration tools.
   involves pointing to the main configuration file or path that will be used
   for the deployment part, and the selection of the cloud site where it will 
   take place.
+
+In case of a private repository, a personal access token is required to read the repository.
+It is an alternative to using passwords for authentication and are intended to access resources on behalf of yourself:
+- `Username`: the username on the repository platform.
+- `Personal access token`: must have at least permission to read the repository.
+
+Documentation about the creation of access tokens can be found here for
+[GitHub](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
+and [GitLab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html).
 
 <p align="center">
   <img src="/img/qaa_srv.gif"/>
