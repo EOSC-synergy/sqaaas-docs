@@ -2,6 +2,8 @@
 title: Analysing the results
 ---
 
+## The quality report
+
 The results obtained by the QAA module highlight the achievements that
 characterize a given code repository, and point developers or code owners to
 those specific parts where quality can be improved. Thus, the ultimate goal is
@@ -40,4 +42,22 @@ in the next image:
 
 <p align="center">
   <img src="/img/award.png"/>
+</p>
+
+## The FAIR data case
+
+The quality indicators that assess the compliance of data with the FAIR 
+principles are those defined in the
+[FAIR Maturity Model](https://doi.org/10.15497/rda00050) specification. The
+SQAaaS relies on the [FAIR EVA](https://github.com/EOSC-synergy/FAIR_eva)
+tool to compile and show this information in a similar fashion as the reports
+for source code and services. Consequently, the report (see example below)
+builds on the results of this tool to add:
+- Specific *hints* that help to cover an unsuccessful FAIR quality indicator
+- A digital *badge* that categorizes the overall FAIRness of the analysed
+dataset, which provides a means to establish a minimum set of criteria (through
+the lower level badge) and additional higher levels of FAIR compliance.
+
+<p align="center">
+  <img src="/img/fair_report.png"/>
 </p>
