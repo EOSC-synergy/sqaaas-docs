@@ -48,6 +48,31 @@ and [GitLab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html
   <img src="/img/qaa_code.gif"/>
 </p>
 
+#### Custom criteria for Software
+
+Some criteria require additional input from the user in order to be correctly evaluated. This
+is commonly the case of the testing-related criteria such as unit and functional testing. Here,
+testing frameworks are diverse and they might require concrete input arguments to make them pass,
+such as path location for the test cases (in non-standard paths). To this end, the SQAaaS' 
+assessment module provides a means to provide such information through the `Choose criteria for
+additional customization`:
+
+<p align="center">
+  <img src="/img/custom_criteria_1.png"/>
+</p>
+
+Then we can select the tool to execute. As usual, a (growing) set of tools have built-in support,
+where `commands` allows the use of alternative tools through the provision of a shell command. In
+the figure that follows, the `pytest` tool has been selected and the required input arguments (path,
+container image URL) provided. 
+
+<p align="center">
+  <img src="/img/custom_criteria_2.png"/>
+</p>
+
+Note that when using `commmands`, providing the URL for the container image URL is highly recommended,
+as the default image will most likely not contain the required tool/s.
+
 
 ### Service
 
